@@ -1,0 +1,244 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    align-items: center;
+  }
+
+  body {
+    font-family: "Nunito", sans-serif;
+    font-style: normal;
+  }
+
+  body p {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+}
+  
+  /* HEADER */
+  /* HEADER PARA CIMA - AZUL */
+  .section-header-acima-azul {
+    background-color: #0e4194;
+    height: 50px;
+
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: end;
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .header-acima-azul-contatos nav {
+    display: flex;
+    gap: 15px;
+  }
+
+  .header-acima-azul-contatos a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+  }
+
+  .header-acima-azul-buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    font-weight: bold;
+  }
+
+  .header-acima-azul-buttons a {
+    height: 35px;
+    display: flex;
+  }
+
+  .btn-conheca-o-objetivo {
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  .btn-seja-escola-conveniada {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+
+  .btn-conheca-o-objetivo, .btn-seja-escola-conveniada {
+    background-color: #002877;
+    border-radius: 8px;
+
+    text-decoration: none;
+  }
+
+  .btn-seja-escola-conveniada:hover {
+    background-color: #001d57;
+  }
+
+  #btn-color-conheca-o-objetivo {
+    color: #fdd703;
+  }
+
+  #btn-color-seja-escola-conveniada {
+    color: white;
+  }
+
+  .btn-area-restrita {
+    background-color: #fbc105;
+    padding: 10px 20px;
+    border-radius: 8px;
+
+    font-size: 16px;
+    text-decoration: none;
+    color: #002877;
+    display: flex;
+    gap: 8px; 
+
+    transition: all 0.7s;
+  }
+
+  .btn-area-restrita:hover {
+    background-color: #ffed00;
+    transition: all 0.7s;
+  }
+
+  /* HEADER PARA BAIXO - BRANCO */
+  .section-header-baixo-branco {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .section-header-baixo-branco img {
+    height: 55px;
+  }
+  
+  .header-baixo-branco-menu {
+    background-color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  
+  .header-baixo-branco-menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    padding: 0 20px;
+  }
+  
+  .header-baixo-branco-menu li {
+    position: relative;
+  }
+  
+  .header-baixo-branco-menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #47536e;
+    text-decoration: none;
+    transition: all 0.3s, color 0.3s;
+    margin-top: 13px; /* resolução para o alinhamento de nav */
+  }
+
+  .header-baixo-branco-menu a:hover {
+    background-color: #f5f5f5;
+    color: #003366;
+  }
+
+  li #a-matriculasabertas {
+    font-weight: 700;
+    color: #002877;
+    border-bottom: solid 5px #fbc105;
+    display: inline-block;
+    padding-bottom: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 0;
+  }  
+  
+  .header-baixo-branco-menu .submenu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    min-width: 250px;
+    z-index: 1000;
+    animation: fadeIn 0.3s ease;
+  }
+  
+  .header-baixo-branco-menu .submenu a {
+    padding: 12px 16px;
+    font-weight: normal;
+    color: #47536e;
+  }
+  
+  .header-baixo-branco-menu .submenu a:hover {
+    background-color: #f4f4f4;
+    color: #084298;
+  }
+  
+  .header-baixo-branco-menu li:hover .submenu {
+    display: block;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  /* CARROSSEL */
+  .carousel-item img {
+    max-height: 600px;
+    object-fit: cover;
+  }  
+
+  /* MATRÍCULAS ABERTAS, CONHEÇA O OBJETIVO (EM AMARELO): */
+  .section-agende-uma-visita-objetivo {
+    background-color: #ffd703;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 160px;
+  }
+
+  .span-matriculas-abertas-negrito {
+    font-weight: 700;
+  }
+
+  .section-agende-uma-visita-objetivo p {
+    font-size: 24px;
+    color: #0e4194;
+  }
+
+  .a-agende-uma-visita {
+    background-color: #0d3880;
+    border-radius: 8px;
+    height: 40px;
+    padding: 23px 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+  }
+
+  .a-agende-uma-visita:hover {
+    background-color: #002877;
+  }
+  
