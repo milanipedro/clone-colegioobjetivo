@@ -1,8 +1,11 @@
+/* CONFIGURAÇÕES INICIAIS */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     align-items: center;
+    text-align: center;
   }
 
   body {
@@ -15,7 +18,7 @@
     margin-bottom: 0 !important;
 }
   
-  /* HEADER */
+  /* ÁREA DO HEADER */
   /* HEADER PARA CIMA - AZUL */
   .section-header-acima-azul {
     background-color: #0e4194;
@@ -196,13 +199,13 @@
     }
   }
 
-  /* CARROSSEL */
+  /* CARROSSEL DE IMAGENS */
   .carousel-item img {
     max-height: 600px;
     object-fit: cover;
   }  
 
-  /* MATRÍCULAS ABERTAS, CONHEÇA O OBJETIVO (EM AMARELO): */
+  /* SECTION - MATRÍCULAS ABERTAS, CONHEÇA O OBJETIVO (EM AMARELO): */
   .section-agende-uma-visita-objetivo {
     background-color: #ffd703;
     padding: 20px;
@@ -213,7 +216,7 @@
     gap: 160px;
   }
 
-  .span-matriculas-abertas-negrito {
+  .span-negrito {
     font-weight: 700;
   }
 
@@ -241,4 +244,136 @@
   .a-agende-uma-visita:hover {
     background-color: #002877;
   }
+
+  /* SECTION - CONHEÇA O SISTEMA DE ENSINO OBJETIVO */
+  .section-conheca-o-sistema {
+    margin: 30px;
+  }
+
+  .p-titulo-conheca-o-sistema {
+    font-size: 40px;
+    font-weight: 600;
+    color: #0d3880;
+  }
   
+  .div-fotos-conheca-o-sistema {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conheca-o-tipo-de-ensino:hover {
+    cursor: pointer;
+  }
+
+  .conheca-o-tipo-de-ensino img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .div-titulo-ensino {
+    height: 50px;
+    
+    display: flex;
+    justify-content: center;
+  }
+
+  .div-titulo-ensino p {
+    font-weight: bolder;
+    color: white;
+  }
+
+  .div-descricao-ensino-hover {
+    padding: 20px;
+    color: white;
+  }
+
+  #div-educacao-infantil .div-titulo-ensino, #div-educacao-infantil .div-descricao-ensino-hover {
+    background-color: #009fe3;
+  }
+
+  #div-ensino-fundamental .div-titulo-ensino, #div-ensino-fundamental .div-descricao-ensino-hover {
+    background-color: #0e4194;
+  }
+
+  #div-ensino-medio .div-titulo-ensino, #div-ensino-medio .div-descricao-ensino-hover {
+    background-color: #0c6f36;
+  }
+
+  #div-pre-vestibular .div-titulo-ensino, #div-pre-vestibular .div-descricao-ensino-hover, #p-pre-vestibular {
+    background-color: #fbc105;
+    color: #0d3880;
+  }
+
+  /* SECTION - MOTIVOS PARA ESTUDAR NO OBJETIVO */
+  .section-motivos-para-estudar-objetivo {
+    background-color: #0a58ca;
+    padding: 48px;
+  }
+
+  .section-motivos-estudar {
+    margin-top: 40px;
+    padding: 0px 65px;
+  }
+
+  .div-6-motivos-topo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .div-3-motivos-baixo {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+
+  .div-motivo {
+    background-color: #002877;
+    color: white;
+
+    height: 180px;
+    padding: 10px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important
+  }
+
+  .div-motivo i {
+    color: yellow;
+    font-size: 45px;
+  }
+
+  .div-motivo2 {
+    margin-top: 10px;
+
+    display: flex;
+    background-color: #002877;
+    color: white;
+
+    height: 180px;
+    padding: 30px;
+    border-radius: 6px;
+    
+    display: flex;
+    gap: 20px;
+
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important
+  }
+
+  .div-motivo2 img {
+    width: 90px;
+  }
+
+  .p-motivos-para-estudar-objetivo {
+    font-size: 40px;
+    font-weight: 600;
+    color: white;
+  }
