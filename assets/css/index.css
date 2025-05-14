@@ -11,6 +11,7 @@
   body {
     font-family: "Nunito", sans-serif;
     font-style: normal;
+    background-color: #ebebeb !important;
   }
 
   body p {
@@ -19,6 +20,18 @@
 }
   
   /* ÁREA DO HEADER */
+  header {
+    box-shadow: 0 3px 15px rgba(0,0,0,.2);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 20;
+  }
+
+  #meuCarrossel {
+    margin-top: 137px;
+  }
+
   /* HEADER PARA CIMA - AZUL */
   .section-header-acima-azul {
     background-color: #0e4194;
@@ -52,7 +65,7 @@
     flex-direction: row;
     gap: 10px;
 
-    font-weight: bold;
+    font-weight: 500;
   }
 
   .header-acima-azul-buttons a {
@@ -75,10 +88,12 @@
     border-radius: 8px;
 
     text-decoration: none;
+    transition: all 0.6s;
   }
 
   .btn-seja-escola-conveniada:hover {
     background-color: #001d57;
+    transition: all 0.6s;
   }
 
   #btn-color-conheca-o-objetivo {
@@ -113,7 +128,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px;
+    background-color: white;
   }
 
   .section-header-baixo-branco img {
@@ -148,6 +163,7 @@
   .header-baixo-branco-menu a:hover {
     background-color: #f5f5f5;
     color: #003366;
+    transition: all 0.6s;
   }
 
   li #a-matriculasabertas {
@@ -177,15 +193,18 @@
     padding: 12px 16px;
     font-weight: normal;
     color: #47536e;
+    transition: all 0.6s;
   }
   
   .header-baixo-branco-menu .submenu a:hover {
     background-color: #f4f4f4;
     color: #084298;
+    transition: all 0.6s;
   }
   
   .header-baixo-branco-menu li:hover .submenu {
     display: block;
+    transition: all 0.6s;
   }
   
   @keyframes fadeIn {
@@ -216,8 +235,12 @@
     gap: 160px;
   }
 
-  .span-negrito {
+  .span-negrito, #texto-negrito {
     font-weight: 700;
+  }
+
+  #texto-negrito600 {
+    font-weight: 600;
   }
 
   .section-agende-uma-visita-objetivo p {
@@ -243,6 +266,7 @@
 
   .a-agende-uma-visita:hover {
     background-color: #002877;
+    transition: all 0.6s;
   }
 
   /* SECTION - CONHEÇA O SISTEMA DE ENSINO OBJETIVO */
@@ -250,10 +274,16 @@
     margin: 30px;
   }
 
-  .p-titulo-conheca-o-sistema {
-    font-size: 40px;
+  .p-titulo-section {
+    font-size: 42px;
     font-weight: 600;
     color: #0d3880;
+  }
+
+  .p-titulo-section-branco {
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
   }
   
   .div-fotos-conheca-o-sistema {
@@ -311,6 +341,7 @@
   .section-motivos-para-estudar-objetivo {
     background-color: #0a58ca;
     padding: 48px;
+    margin-bottom: 30px;
   }
 
   .section-motivos-estudar {
@@ -365,15 +396,160 @@
     display: flex;
     gap: 20px;
 
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
   }
 
   .div-motivo2 img {
     width: 90px;
   }
 
-  .p-motivos-para-estudar-objetivo {
-    font-size: 40px;
+  /* SECTION INSCRIÇÕES ABERTAS PARA OS DESAFIOS */
+  .section-inscricoes-abertas-desafios {
+    padding: 0px 65px;
+    margin-bottom: 30px;
+  }
+
+  .listagem-inscricoes-desafios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    margin-top: 20px;
+    padding: 0px 85px;
+  }
+
+  .inscricao-desafio {
+    border-radius: 6px;
+    background-color: rgba(255,255,255);
+    color: rgba(108,117,125);
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    padding: 20px 0px;
+    width: 400px;
+    height: 430px;
+  }
+
+  .inscricao-desafio i {
+    color: #fdd703;
+  }
+
+  .div-informacoes-desafio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .div-informacoes-desafio p {
+    text-align: start !important;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 8px;
+    width: 80%;
+  }
+
+  .p-titulo-inscricao-desafio {
+    font-size: 26px;
+    color: #0085cc;
     font-weight: 600;
+    padding: 10px;
+  }
+
+  .a-inscricao-desafio {
+    margin-top: 30px;
+    background-color: #0a58ca;
+    border-radius: 8px;
+    height: 40px;
+    width: 200px;
+    padding: 23px 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     color: white;
+    font-weight: 600;
+    font-size: 20px;
+    text-decoration: none;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+
+    transition: all 0.6s;
+  }
+
+  .a-inscricao-desafio:hover {
+    background-color: #084298;
+    transition: all 0.6s;
+  }
+
+  /* SECTION NOTICIAS */
+  .section-noticias {
+    background-color: #fdd703;
+    padding-top: 40px;
+    padding-bottom: 50px;
+  }
+
+  #p-titulo-section-noticia {
+    color: #0a58ca !important;
+  }
+
+  .div-noticias {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 20px 60px;
+    padding-bottom: 30px;
+  }
+
+  .div-noticia {
+    width: 330px;
+    height: 330px;
+    overflow: hidden;
+  }
+
+  .div-noticia img {
+    width: 330px;
+    height: 220px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    transition: all 0.7s;
+    object-fit: cover;
+  }
+
+  .div-noticia img:hover {
+    transition: all 0.6s;
+    transform: scale(1.10);
+    border-radius: 0px;
+  }
+
+  .div-descricao-noticia {
+    background-color: #ebebeb;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    border-bottom-right-radius: 6px;
+    border-bottom-left-radius: 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 105px;
+  }
+
+  .div-descricao-noticia a {
+    color: #14387f;
+    text-decoration: none;
+    transition: all 0.6s;
+  }
+
+  .div-descricao-noticia a:hover {
+    color: #002369;
+    transition: all 0.6s;
+  }
+
+  .a-ler-mais-noticias {
+    text-decoration: none;
+    color: white;
+    padding: 10px 24px;
+
+    background-color: #0a58ca;
+    border-radius: 999px;
+  }
+
+  .a-ler-mais-noticias:hover {
+    background-color: #084298;
   }
