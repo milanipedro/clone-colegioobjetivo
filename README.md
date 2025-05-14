@@ -1,1 +1,1 @@
-# clone-colegioobjetivo
+# Este projeto foi desenvolvido com finalidade educacional, visando à aplicação de conhecimentos próprios e, posteriormente, à elaboração de uma proposta a ser apresentada à Coordenação Escolar de uma das unidades do Sistema Objetivo. A proposta consiste na oferta do curso “Desenvolvendo um site escolar completo” para alunos do Ensino Fundamental II (do 6º ao 9º ano).

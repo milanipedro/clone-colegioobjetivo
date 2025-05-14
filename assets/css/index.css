@@ -4,8 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    align-items: center;
-    text-align: center;
   }
 
   body {
@@ -58,6 +56,9 @@
     display: flex;
     flex-direction: row;
     gap: 8px;
+
+    align-items: center;
+    text-align: center;
   }
 
   .header-acima-azul-buttons {
@@ -76,6 +77,8 @@
   .btn-conheca-o-objetivo {
     font-size: 15px;
     padding: 10px;
+
+    align-items: center;
   }
 
   .btn-seja-escola-conveniada {
@@ -114,6 +117,7 @@
     color: #002877;
     display: flex;
     gap: 8px; 
+    align-items: center;
 
     transition: all 0.7s;
   }
@@ -145,6 +149,14 @@
     display: flex;
     justify-content: flex-start;
     padding: 0 20px;
+
+    align-items: center;
+    text-align: center;
+  }
+
+  .header-baixo-branco-menu .submenu a {
+    text-align: start;
+    align-items: start;
   }
   
   .header-baixo-branco-menu li {
@@ -219,6 +231,11 @@
   }
 
   /* CARROSSEL DE IMAGENS */
+  .carousel-item {
+    background-color: #ebebeb;
+    margin-top: 20px;
+  }
+
   .carousel-item img {
     max-height: 600px;
     object-fit: cover;
@@ -278,12 +295,16 @@
     font-size: 42px;
     font-weight: 600;
     color: #0d3880;
+    align-items: center;
+    text-align: center;
   }
 
   .p-titulo-section-branco {
     font-size: 48px;
     font-weight: 600;
     color: white;
+    align-items: center;
+    text-align: center;
   }
   
   .div-fotos-conheca-o-sistema {
@@ -308,6 +329,7 @@
     
     display: flex;
     justify-content: center;
+    align-items: center;
   }
 
   .div-titulo-ensino p {
@@ -318,6 +340,7 @@
   .div-descricao-ensino-hover {
     padding: 20px;
     color: white;
+    text-align: center;
   }
 
   #div-educacao-infantil .div-titulo-ensino, #div-educacao-infantil .div-descricao-ensino-hover {
@@ -374,7 +397,8 @@
     justify-content: center;
     gap: 15px;
 
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    text-align: center;
   }
 
   .div-motivo i {
@@ -420,7 +444,7 @@
   .inscricao-desafio {
     border-radius: 6px;
     background-color: rgba(255,255,255);
-    color: rgba(108,117,125);
+    color: #212529;
     box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
     padding: 20px 0px;
     width: 400px;
@@ -450,6 +474,9 @@
     color: #0085cc;
     font-weight: 600;
     padding: 10px;
+
+    align-items: center;
+    text-align: center;
   }
 
   .a-inscricao-desafio {
@@ -492,7 +519,7 @@
   .div-noticias {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 20px 60px;
+    padding: 20px 70px;
     padding-bottom: 30px;
   }
 
@@ -515,6 +542,7 @@
     transition: all 0.6s;
     transform: scale(1.10);
     border-radius: 0px;
+    cursor: pointer;
   }
 
   .div-descricao-noticia {
@@ -550,6 +578,110 @@
     border-radius: 999px;
   }
 
+  #div-a-ler-mais-noticias {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
   .a-ler-mais-noticias:hover {
     background-color: #084298;
   }
+
+  /* SECTION INICIATIVAS - ATUALIDADES OBJETIVO */
+  .section-iniciativas-atualidades {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding: 35px 120px;
+    gap: 40px;
+    
+    background-color: #edf2fc;
+  }
+
+  .iniciativa-atualidade {
+    background-color: #ebebeb;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.15);
+    border: solid 2px #0d3880;
+    border-radius: 6px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    height: 300px;
+  }
+
+  .a-iniciativas-atualidades {
+    text-decoration: none;
+  }
+
+  .iniciativa-atualidade i {
+    color: #0e4194;
+    font-size: 65px;
+  }
+
+  .titulo-iniciativa {
+    padding-top: 20px;
+    padding-bottom: 10px;
+
+    color: #0e4194;
+    font-size: 30px;
+    line-height: 1.2;
+
+    text-align: center;
+  }
+
+  .descricao-iniciativa {
+    color: #212529;
+    text-align: center;
+  }
+
+  /* SECTION DEPOIMENTOS */
+  .section-depoimentos-alunos, .carousel-item {
+    background-color: #ebebeb !important;
+  }
+
+  .p-depoimento-aprovado {
+    color: #6c757d;
+    padding-top: 20px;
+    font-size: 14px;
+  }
+
+  .a-leia-mais-depoimentos {
+    text-decoration: none;
+    border-radius: 999px;
+    border: solid 1px #0a58ca;
+    color: #0a58ca;
+    padding: 8px 15px;
+
+    transition: all 0.7s;
+  }
+
+  .a-leia-mais-depoimentos:hover {
+    color: white;
+    background-color: #0a58ca;
+
+    transition: all 0.7s;
+  }
+
+  #div-a-leia-mais-depoimentos {
+    padding-top: 5px;
+  }
+
+#carrosselDepoimentos .carousel-indicators [data-bs-target] {
+    background-color: #fc0;
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    opacity: 1;
+}
+
+#carrosselDepoimentos .carousel-indicators .active {
+    background-color: rgba(1,41,112);
+}
+
+/* SECTION DO FOOTER */
+footer {
+  margin-top: 200px;
+}
